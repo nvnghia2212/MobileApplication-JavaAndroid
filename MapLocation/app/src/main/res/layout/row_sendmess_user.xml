@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtEmailFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Friend"
+            android:textSize="10dp"
+            android:textStyle="bold|italic" />
+
+        <RelativeLayout
+            android:id="@+id/blank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtEmailFriend"
+            android:layout_below="@+id/txtEmailFriend"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/message_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtFriend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text Friend"
+                    android:textSize="13dp"
+                    android:background="@drawable/custom_textmess" />
+
+                <TextView
+                    android:id="@+id/txtDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="7dp"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/txtFriend" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

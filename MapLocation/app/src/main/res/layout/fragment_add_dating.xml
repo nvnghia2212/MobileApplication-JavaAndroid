@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/darker_gray">
+
+    <ImageView
+        android:id="@+id/imgRemove"
+        android:layout_marginTop="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@android:drawable/ic_delete" />
+
+    <EditText
+        android:id="@+id/editNameAddress"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="50dp"
+        android:background="#ffffff"
+        android:hint="Nhập địa điểm"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/txtDateAddress"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/editNameAddress"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editNameAddress"
+        android:layout_marginTop="100dp"
+        android:background="#ffffff"
+        android:hint="Thời gian: dd/mm/yy"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/imgDateAddress"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtDateAddress"
+        android:src="@drawable/dateaddress" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtDateAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:text="Hoàn Tất"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

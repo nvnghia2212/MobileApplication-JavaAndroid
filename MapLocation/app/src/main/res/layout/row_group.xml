@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!--<TextView-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:id="@+id/txtEmailFriend"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Họ"-->
+    <!--android:textSize="18sp"-->
+    <!--android:textStyle="bold" />-->
+    <!---->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtEmail"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/txtEmailFriend"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="Email"-->
+    <!--android:textSize="12sp"-->
+    <!--android:textStyle="italic" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtOnlOff"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_toLeftOf="@+id/imgChat"-->
+    <!--android:text="Onl/Off"-->
+    <!--android:textSize="10sp"-->
+    <!--android:textStyle="italic" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imgLocation"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_above="@+id/txtEmail"-->
+    <!--android:layout_marginBottom="-5dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:layout_toLeftOf="@+id/imgDelete"-->
+    <!--app:srcCompat="@drawable/location" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:id="@+id/imgDelete"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@android:drawable/ic_delete" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imgChat"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_above="@+id/txtEmail"-->
+    <!--android:layout_marginBottom="-5dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:layout_toLeftOf="@+id/imgLocation"-->
+    <!--android:src="@drawable/mess" />-->
+
+    <ImageView
+        android:id="@+id/imgChat"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/mess" />
+
+    <TextView
+        android:id="@+id/txtNameGroup"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgChat"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imgChat"
+        android:text="Name Group"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgAddMember"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/imgChat"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txtNameGroup"
+        app:srcCompat="@drawable/addmember" />
+
+    <ImageView
+        android:id="@+id/imgMember"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/imgChat"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imgAddMember"
+        app:srcCompat="@drawable/member" />
+
+    <ImageView
+        android:id="@+id/imgOutGroup"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imgChat"
+        android:src="@drawable/leave"/>
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imgChat"
+        android:src="@android:drawable/ic_delete"
+        android:visibility="gone"/>
+
+</RelativeLayout>

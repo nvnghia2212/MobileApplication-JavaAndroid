@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessengerActivity">
+
+    <ListView
+        android:id="@+id/lvMess"
+        android:layout_width="360dp"
+        android:layout_height="383dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/txtName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:divider="@null"
+        android:scrollbars="none">
+    </ListView>
+
+    <EditText
+        android:id="@+id/editMess"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/lvMess"
+        android:layout_marginBottom="20dp"
+        android:textSize="12dp"
+        android:layout_alignLeft="@+id/lvMess" />
+
+    <ImageView
+        android:id="@+id/imgSend"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/lvMess"
+        android:layout_alignRight="@+id/lvMess"
+        android:layout_alignTop="@+id/editMess"
+        android:src="@drawable/sendmess" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imgRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lvMess"
+        android:layout_alignEnd="@+id/lvMess"
+        android:layout_marginBottom="-40dp"
+        android:src="@android:drawable/ic_delete"
+        android:layout_alignRight="@+id/lvMess" />
+
+</RelativeLayout>

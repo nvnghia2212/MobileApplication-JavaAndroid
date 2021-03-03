@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/txtNameDating"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Name Dating"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDateAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNameDating"
+        android:layout_marginTop="5dp"
+        android:text="DateAddress"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imgLocation"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/txtNameDating"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imgMember"
+        app:srcCompat="@drawable/locationgroup"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgMember"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/txtNameDating"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        app:srcCompat="@drawable/member"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgJoin"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtNameDating"
+        android:src="@drawable/join"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgUnJoin"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtNameDating"
+        android:src="@drawable/unjoin"
+        android:visibility="gone"/>
+
+</RelativeLayout>

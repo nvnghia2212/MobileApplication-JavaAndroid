@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold|italic"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgLogout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="130dp"
+            android:visibility="gone"
+            android:src="@drawable/logout"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/floatingFriendMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:scaleType="fitXY"
+            app:menu_fab_label=""
+            app:menu_icon="@drawable/friendmenu"
+            app:menu_openDirection="up"
+            app:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingChatGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chatgroup"
+                app:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingSearchFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/searchfriend"
+                app:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingRequestFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/requestfriend"
+                app:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/friend"
+                app:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/floatingMapMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/floatingFriendMenu"
+            android:scaleType="fitXY"
+            app:menu_fab_label=""
+            app:menu_icon="@drawable/menumap"
+            app:menu_openDirection="up"
+            app:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingSearchMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seach"
+                app:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingDirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/direction"
+                app:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <ImageView
+            android:id="@+id/imgMove"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/floatingFriendMenu"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/floatingFriendMenu"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/move" />
+
+        <ImageView
+            android:id="@+id/imgStop"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/floatingFriendMenu"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/stop"
+            android:layout_alignRight="@+id/floatingFriendMenu"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imgFriendMarker"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignRight="@+id/floatingFriendMenu"
+            android:layout_marginTop="155dp"
+            android:src="@drawable/locationfriend" />
+
+        <ImageView
+            android:id="@+id/imgNotFriendMarker"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignRight="@+id/floatingFriendMenu"
+            android:layout_marginTop="155dp"
+            android:src="@drawable/notmarker"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imgTimeDating"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignRight="@+id/floatingFriendMenu"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/timedating"/>
+
+        <FrameLayout
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/framConten"
+            android:layout_width="350dp"
+            android:layout_height="150dp">
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imgDirect"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="115dp"
+            android:src="@drawable/direction"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="115dp"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    </fragment>
+
+</RelativeLayout>
